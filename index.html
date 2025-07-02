@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divesh Zope | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #eee;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    }
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .btn {
+      background: #007bff;
+      color: white;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      margin: 10px auto;
+    }
+    .contact a { color: #ccc; text-decoration: none; margin: 0 8px; }
+    section {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+    h2 { margin-bottom: 10px; color: #00bcd4; border-bottom: 2px solid #007bff; padding-bottom: 5px; }
+    ul { list-style: disc inside; margin-left: 20px; }
+    .project, .timeline-item { margin-bottom: 20px; }
+    .github-link { display: block; margin-top: 20px; color: #00aced; text-decoration: underline; text-align: center; }
+    .filter-buttons { text-align: center; margin-bottom: 20px; }
+    .filter-buttons button {
+      background: #00bcd4;
+      border: none;
+      padding: 8px 15px;
+      margin: 0 5px;
+      color: #000;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hidden { display: none; }
+    footer { text-align: center; padding: 20px; background: #111; color: #aaa; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Profile.jpg" alt="Divesh Zope" class="profile-photo">
+    <h1>Divesh Zope</h1>
+    <h3>Software Developer</h3>
+    <p>Pune, India | 📞 +91 7391029238 | ✉️ <a href="mailto:diveshzope@gmail.com">diveshzope@gmail.com</a></p>
+    <p><a href="https://linkedin.com/in/divesh-zope" target="_blank">LinkedIn</a> | <a href="https://github.com/DiveshZope08" target="_blank">GitHub</a></p>
+    <a class="btn" href="DiveshZope_Resume.pdf" download>Download Resume</a>
+  </header>
+
+  <section>
+    <h2>Objective</h2>
+    <p>To secure a challenging role as a software developer where I can utilize my technical skills, problem solving abilities, and passion for coding to contribute to innovative projects and grow as a professional. Aim to continuously enhance my knowledge and stay updated with emerging technologies to deliver efficient and scalable solutions.</p>
+  </section>
+
+  <section>
+    <h2>Skills Summary</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, SQL, HTML5, CSS3, JavaScript</li>
+      <li><strong>Frameworks/Libraries:</strong> Spring Boot, JDBC, Servlets, JSP, Hibernate</li>
+      <li><strong>Databases:</strong> MySQL, Oracle, PL/SQL</li>
+      <li><strong>Tools & Platforms:</strong> Git, GitHub, Postman, IntelliJ, Eclipse, REST APIs</li>
+      <li><strong>Other Skills:</strong> OOPs, Multithreading, Exception Handling, SDLC, Agile</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="timeline-item">
+      <h3>Software Development Intern</h3>
+      <p><strong>Hummingbytes Technologies Pvt Ltd | Nashik, India</strong></p>
+      <ul>
+        <li>Completed a 6-month internship focused on backend development using Java and Spring Boot.</li>
+        <li>Gained experience in database integration with MySQL and implemented secure RESTful APIs.</li>
+        <li>Worked in an Agile environment using JIRA and Git for task management and version control.</li>
+        <li>Participated in unit testing, debugging, and contributed to technical documentation using MS Office tools.</li>
+        <li>Duration: Jun 2024 – Dec 2024</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="filter-buttons">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('web')">Web</button>
+      <button onclick="filterProjects('iot')">IoT</button>
+      <button onclick="filterProjects('java')">Java</button>
+    </div>
+    <div class="project web">
+      <h3>Train Ticket Management System</h3>
+      <p>A web-based application to manage bookings, cancellations, schedules, and PNR generation.</p>
+      <p><strong>Tech:</strong> HTML, CSS, Bootstrap, Java (J2EE), JDBC, Servlets, Oracle SQL</p>
+    </div>
+    <div class="project iot">
+      <h3>BrewGenius - IoT Coffee Machine</h3>
+      <p>Smart coffee machine that brews based on user preferences with app control and sensors.</p>
+      <p><strong>Tech:</strong> ESP32, Node.js, MySQL, EJS, React, Sensors, Bootstrap</p>
+    </div>
+    <div class="project java">
+      <h3>Fitness Tracker System</h3>
+      <p>Tracks workouts and goals with GUI, authentication, and real-time stats.</p>
+      <p><strong>Tech:</strong> Java, Spring Boot, Swing, MySQL</p>
+    </div>
+    <a class="github-link" href="https://github.com/DiveshZope08" target="_blank">View More Projects on GitHub</a>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="timeline-item">
+      <h3>B.E. Electronics and Telecommunication</h3>
+      <p>PES Modern College of Engineering, Pune</p>
+      <p><strong>CGPA:</strong> 7.31 (First Class) | <strong>Duration:</strong> Jun 2021 – Jun 2025</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>IBM IT Support – IBM (Coursera)</li>
+      <li>Full Stack Development – Udemy</li>
+      <li>AWS Cloud Practitioner Essentials – AWS</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Divesh Zope | Portfolio Website</p>
+  </footer>
+
+  <script>
+    function filterProjects(type) {
+      const projects = document.querySelectorAll('.project');
+      projects.forEach(proj => {
+        if (type === 'all') {
+          proj.classList.remove('hidden');
+        } else {
+          proj.classList.add('hidden');
+          if (proj.classList.contains(type)) {
+            proj.classList.remove('hidden');
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
